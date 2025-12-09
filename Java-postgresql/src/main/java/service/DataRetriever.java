@@ -37,8 +37,6 @@ public class DataRetriever {
 
     public List<Product> getProductList(int page, int size) {
         List<Product> products = new ArrayList<>();
-
-        // Calcul de l'offset
         int offset = (page - 1) * size;
 
         String sql = "SELECT id, name, price, creation_datetime FROM product ORDER BY id LIMIT ? OFFSET ?";

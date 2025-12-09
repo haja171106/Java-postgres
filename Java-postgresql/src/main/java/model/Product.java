@@ -35,9 +35,4 @@ public class Product {
     public String getCategoryName() {
         return category != null ? category.getName() : null;
     }
-
-    public void setCreationDatetime(Instant creationDatetime) {
-        this.creationDate = creationDatetime;
-    }
-
 }
